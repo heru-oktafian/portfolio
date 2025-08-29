@@ -18,7 +18,10 @@ jobs:
         with:
           ruby-version: .ruby-version
           bundler-cache: true
-
+          
+      - name: Ubah izin bin/brakeman agar bisa dieksekusi
+        run: chmod +x bin/brakeman
+  
       - name: Scan for common Rails security vulnerabilities using static analysis
         run: bin/brakeman --no-pager
 
