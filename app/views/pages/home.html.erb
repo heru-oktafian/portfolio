@@ -1,0 +1,575 @@
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#home">
+                    <div class="text-2xl font-bold blue-gradient bg-clip-text text-transparent">
+                        Heru Oktafian
+                    </div>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-blue-600">Beranda</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-blue-600">Tentang</a>
+                    <a href="#skills" class="nav-link text-gray-700 hover:text-blue-600">Keahlian</a>
+                    <a href="#portfolio" class="nav-link text-gray-700 hover:text-blue-600">Portfolio</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600">Kontak</a>
+                </div>
+                <button id="mobile-menu" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center gradient-bg">
+        <div class="max-w-6xl mx-auto px-6 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-white fade-in">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                        Full Stack Developer & 
+                        <span class="text-blue-200">UI/UX Designer</span>
+                    </h1>
+                    <p class="text-xl mb-8 text-blue-100">
+                        Saya adalah Heru Oktafian, seorang Full Stack Developer dengan keahlian Backend (Golang), Frontend (React, NextJS, Vue), Mobile (Flutter), dan UI/UX Design. Siap membantu mewujudkan solusi digital terbaik untuk bisnis Anda.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button onclick="scrollToSection('portfolio')" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+                            Lihat Portfolio
+                        </button>
+                        <button onclick="scrollToSection('contact')" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                            Hubungi Saya
+                        </button>
+                    </div>
+                    <a href="https://www.heruoktafian.com">
+                        <div class="mt-8 text-blue-100">
+                            <p class="text-sm">🌐 heruoktafian.com</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex justify-center fade-in">
+                    <div class="relative">
+                        <!-- Placeholder untuk foto profil -->
+                        <!-- <div class="w-80 h-80 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm border-4 border-white/30"> -->
+                                <%= image_tag 'heru.png', alt: 'Foto Profil Heru Oktafian', class: 'w-80 h-80 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm border-4 border-white/30' %>
+
+                        <!-- </div> -->
+                        <div class="absolute -top-4 -right-4 w-20 h-20 bg-blue-200 rounded-full opacity-80"></div>
+                        <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-blue-300 rounded-full opacity-80"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Tentang Saya</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Saya adalah Full Stack Developer dengan pengalaman luas dalam berbagai teknologi modern. Sebagai Freelance Professional, saya telah membantu banyak klien mewujudkan visi digital mereka.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-8 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100 card-hover fade-in">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,2A2,2 0 0,1 14,4C14,4.74 13.6,5.39 13,5.73V7H14A7,7 0 0,1 21,14H22A1,1 0 0,1 23,15V18A1,1 0 0,1 22,19H21V20A2,2 0 0,1 19,22H5A2,2 0 0,1 3,20V19H2A1,1 0 0,1 1,18V15A1,1 0 0,1 2,14H3A7,7 0 0,1 10,7H11V5.73C10.4,5.39 10,4.74 10,4A2,2 0 0,1 12,2M7.5,13A2.5,2.5 0 0,0 5,15.5A2.5,2.5 0 0,0 7.5,18A2.5,2.5 0 0,0 10,15.5A2.5,2.5 0 0,0 7.5,13M16.5,13A2.5,2.5 0 0,0 14,15.5A2.5,2.5 0 0,0 16.5,18A2.5,2.5 0 0,0 19,15.5A2.5,2.5 0 0,0 16.5,13Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Backend Development</h3>
+                    <p class="text-gray-600">Golang & Ruby on Rails untuk sistem yang robust dan scalable.</p>
+                </div>
+                
+                <div class="text-center p-8 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100 card-hover fade-in">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14,12H19.5L14,6.5V12M6,2H14L20,8V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V4A2,2 0 0,1 6,2M6,20H18V12H12V6H6V20Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Frontend Development</h3>
+                    <p class="text-gray-600">React, NextJS, VueJS dengan Tailwind CSS untuk UI yang modern.</p>
+                </div>
+                
+                <div class="text-center p-8 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100 card-hover fade-in">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17,19H7V5H17M17,1H7C5.89,1 5,1.89 5,3V21C5,22.11 5.89,23 7,23H17C18.11,23 19,22.11 19,21V3C19,1.89 18.11,1 17,1Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Mobile Development</h3>
+                    <p class="text-gray-600">Flutter untuk aplikasi mobile cross-platform yang performant.</p>
+                </div>
+                
+                <div class="text-center p-8 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100 card-hover fade-in">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,2C13.1,2 14,2.9 14,4C14,5.1 13.1,6 12,6C10.9,6 10,5.1 10,4C10,2.9 10.9,2 12,2M21,9V7L15,7V9C15,10.1 15.9,11 17,11V20C17,21.1 16.1,22 15,22H9C7.9,22 7,21.1 7,20V11C8.1,11 9,10.1 9,9V7H3V9C3,10.1 3.9,11 5,11V20C5,21.1 5.9,22 7,22H17C18.1,22 19,21.1 19,20V11C20.1,11 21,10.1 21,9Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">UI/UX Design</h3>
+                    <p class="text-gray-600">Desain interface yang user-friendly dan pengalaman yang optimal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Keahlian Teknis</h2>
+                <p class="text-xl text-gray-600">Teknologi dan framework yang saya kuasai</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="fade-in">
+                    <h3 class="text-2xl font-semibold mb-8 text-gray-800">Backend & Database</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-gray-700">Golang</span>
+                                <span class="text-gray-600">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-blue-600 h-3 rounded-full" style="width: 0%" data-width="95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-gray-700">Ruby on Rails</span>
+                                <span class="text-gray-600">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-blue-600 h-3 rounded-full" style="width: 0%" data-width="90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-gray-700">PostgreSQL & MySQL</span>
+                                <span class="text-gray-600">88%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-blue-600 h-3 rounded-full" style="width: 0%" data-width="88%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-gray-700">API Development</span>
+                                <span class="text-gray-600">92%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-blue-600 h-3 rounded-full" style="width: 0%" data-width="92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fade-in">
+                    <h3 class="text-2xl font-semibold mb-8 text-gray-800">Frontend & Mobile</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-gray-700">React & NextJS</span>
+                                <span class="text-gray-600">93%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-blue-400 to-blue-500 h-3 rounded-full" style="width: 0%" data-width="93%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-gray-700">VueJS</span>
+                                <span class="text-gray-600">87%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-blue-400 to-blue-500 h-3 rounded-full" style="width: 0%" data-width="87%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-gray-700">Flutter</span>
+                                <span class="text-gray-600">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-blue-400 to-blue-500 h-3 rounded-full" style="width: 0%" data-width="85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-gray-700">Tailwind CSS</span>
+                                <span class="text-gray-600">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-blue-400 to-blue-500 h-3 rounded-full" style="width: 0%" data-width="95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 fade-in">
+                <h3 class="text-2xl font-semibold mb-8 text-gray-800 text-center">Tools & Technologies</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                    <div class="bg-white p-4 rounded-xl shadow-sm text-center card-hover">
+                        <div class="text-3xl mb-2">🐹</div>
+                        <span class="font-medium text-sm">Golang</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm text-center card-hover">
+                        <div class="text-3xl mb-2">💎</div>
+                        <span class="font-medium text-sm">Ruby</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm text-center card-hover">
+                        <div class="text-3xl mb-2">⚛️</div>
+                        <span class="font-medium text-sm">React</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm text-center card-hover">
+                        <div class="text-3xl mb-2">🔷</div>
+                        <span class="font-medium text-sm">Flutter</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm text-center card-hover">
+                        <div class="text-3xl mb-2">🎨</div>
+                        <span class="font-medium text-sm">Figma</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm text-center card-hover">
+                        <div class="text-3xl mb-2">🐳</div>
+                        <span class="font-medium text-sm">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Portfolio Saya</h2>
+                <p class="text-xl text-gray-600">3 project terbaik yang telah saya kerjakan</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover fade-in">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center relative">
+                        <div class="text-center text-white">
+                            <%= image_tag 'img-viretail.png', class: 'w-60 rounded items-center justify-center' %>
+                            <p class="text-sm opacity-80">Viretail</p>
+                        </div>
+                        <div class="absolute top-2 right-2 bg-white/20 px-2 py-1 rounded text-xs">NextJS + Golang</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-center">Retail Point of Sale</h3>
+                        <p class="text-gray-600 mb-4 text-justify">Viretail ini adalah program kasir berbasis web yang dibangun dengan NextJS dan Golang, dilengkapi dengan fitur inventory management, dan dashboard admin yang powerful. Selain kelengkapan fitur, Viretail juga menawarkan kemudahan integrasi dengan lebih dari satu cabang toko retail maupun grosir.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">NextJS</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Golang</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Redis</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover fade-in">
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center relative">
+                        <div class="text-center text-white">
+                            <%= image_tag 'img-vimedika.png', class: 'w-60 h-40 rounded items-center justify-center' %>
+                            <p class="text-sm opacity-80">Smart Pharma</p>
+                        </div>
+                        <div class="absolute top-2 right-2 bg-white/20 px-2 py-1 rounded text-xs">Flutter + Golang</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-center">Pharmacy Mobile Apps</h3>
+                        <p class="text-gray-600 mb-4 text-justify">Aplikasi mobile menejemen Apotek dengan tampilan yang user-friendly dan fitur lengkap yang memungkinkan pengguna untuk mengelola inventaris, memproses transaksi, dan mengakses informasi obat dengan mudah. Selain itu salah satu fitur unggulannya adalah integrasi dengan <b>SATU SEHAT</b> selaku pemberi regulasi layanan kesehatan.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Flutter</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Golang</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover fade-in">
+                    <div class="h-48 bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative">
+                        <div class="text-center text-white">
+                            <%= image_tag 'img-simrs-vimedika.png', class: 'w-60 rounded items-center justify-center' %>
+                            <p class="text-sm opacity-80">ViMedika</p>
+                        </div>
+                        <div class="absolute top-2 right-2 bg-white/20 px-2 py-1 rounded text-xs">NextJS + Flutter + Golang</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-center">SIMRS Multiplatform</h3>
+                        <p class="text-gray-600 mb-4 text-justify">Dalam SIMRS ViMedika ini, aplikasi dibangun dengan menggunakan arsitektur microservices yang memungkinkan pengembangan dan skalabilitas yang lebih baik. Setiap layanan dapat dikembangkan, diuji, dan di-deploy secara independen, sehingga mempercepat waktu pengembangan dan memudahkan pemeliharaan. Selain itu, <b>SIMRS ViMedika</b> juga sudah terintegrasi dengan <b>SATU SEHAT</b> dan <b>BPJS</b> sebagai pembuat regulasi layanan kesehatan.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">NextJS</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Flutter</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Golang</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Redis</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Firebase</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 gradient-bg">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl font-bold text-white mb-4">Mari Berkolaborasi</h2>
+                <p class="text-xl text-blue-100">Punya project menarik? Mari diskusikan bagaimana saya bisa membantu mewujudkan visi digital Anda!</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-white fade-in">
+                    <h3 class="text-2xl font-semibold mb-6">Hubungi Saya</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4M20,8L12,13L4,8V6L12,11L20,6V8Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-medium">Email</p>
+                                <p class="text-blue-100">heru@heruoktafian.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-medium">WhatsApp</p>
+                                <p class="text-blue-100">+62 812-3456-7890</p>
+                            </div>
+                        </div>
+                        <span class="block h-px"></span>
+                        <a href="https://www.heruoktafian.com">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M16.36,14C16.44,13.3 16.5,12.66 16.5,12S16.44,10.7 16.36,10H19.74C19.9,10.64 20,11.31 20,12S19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12S9.56,10.66 9.66,10H14.34C14.44,10.66 14.5,13.34 14.5,12S14.44,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12S4.1,10.64 4.26,10H7.64C7.56,10.7 7.5,11.34 7.5,12S7.56,13.3 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Website</p>
+                                    <p class="text-blue-100">heruoktafian.com</p>
+                                </div>
+                            </div>
+                        </a>
+                        <span class="block h-px"></span>
+                        <a href="https://maps.app.goo.gl/QXTV2z7SonGpnZWP8" target="_blank">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Lokasi</p>
+                                    <p class="text-blue-100">Singosari - Malang</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <p class="mb-4 font-medium">Follow Saya:</p>
+                        <div class="flex space-x-4">
+                            <button class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors" onclick="window.open('https://www.linkedin.com/in/heru-oktafian-st-ctt-987330103/', '_blank')">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19S5.19 5.95 5.19 6.88A1.69 1.69 0 0 0 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"/>
+                                </svg>
+                            </button>
+                            <button class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors" onclick="window.open('https://github.com/heru-oktafian', '_blank')">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"/>
+                                </svg>
+                            </button>
+                            <button class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors" onclick="window.open('https://x.com/HeruOktafianST', '_blank')">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"/>
+                                </svg>
+                            </button>
+                            <button class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors" onclick="window.open('https://www.facebook.com/heruokt', '_blank')">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M22 12C22 6.48 17.52 2 12 2S2 6.48 2 12c0 5 3.66 9.13 8.44 9.88v-6.99H7.9v-2.89h2.54V9.41c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.89h-2.34v6.99C18.34 21.13 22 17 22 12z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 fade-in">
+                    <%= form_with url: "https://pesan.heruoktafian.com", method: :post, local: true, html: { id: "contact-form", class: "space-y-4" } do |f| %>
+                        <div>
+                            <%= f.label :name, "Nama", class: "block text-white font-medium mb-2" %>
+                            <%= f.text_field :name, placeholder: "Nama Anda", required: true, class: "w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-white" %>
+                        </div>
+
+                        <div>
+                            <%= f.label :email, "Email", class: "block text-white font-medium mb-2" %>
+                            <%= f.email_field :email, placeholder: "email@anda.com", required: true,
+                                class: "w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-white" %>
+                        </div>
+
+                        <div>
+                            <%= f.label :project_type, "Pilih jenis project", class: "block text-white mb-1" %>
+                            <%= f.select :project_type,
+                                options_for_select([
+                                    ["Pilih jenis project", ""],
+                                    ["Web Development", "web"],
+                                    ["Mobile App", "mobile"],
+                                    ["Full Stack Development", "fullstack"],
+                                    ["UI/UX Design", "uiux"],
+                                    ["Konsultasi Teknis", "consultation"]
+                                ]),
+                                {},
+                                class: "w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-white" %>
+                        </div>
+
+                        <div>
+                            <%= f.label :message, "Pesan", class: "block text-white font-medium mb-2" %>
+                            <%= f.text_area :message, rows: 4, required: true, class:"w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-white" %>
+                        </div>
+
+                        <div>
+                            <%= f.submit "Kirim Pesan", class: "w-full bg-white text-blue-600 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors" %>
+                        </div>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p>&copy; 2024 Heru Oktafian. Dibuat dengan ❤️ untuk menciptakan solusi digital terbaik.</p>
+            <p class="text-gray-400 text-sm mt-2">Full Stack Developer | Freelance Professional | <a href="https://www.heruoktafian.com">heruoktafian.com</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            alert('Menu mobile akan ditampilkan di sini!');
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Skill bars animation
+        const skillObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const skillBars = entry.target.querySelectorAll('.skill-bar');
+                    skillBars.forEach(bar => {
+                        const width = bar.getAttribute('data-width');
+                        setTimeout(() => {
+                            bar.style.width = width;
+                        }, 500);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        const skillsSection = document.getElementById('skills');
+        if (skillsSection) {
+            skillObserver.observe(skillsSection);
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.getElementById("contact-form");
+            const modal = document.getElementById("notification-modal");
+            const messageBox = document.getElementById("notification-message");
+            const okButton = document.getElementById("notification-ok");
+
+            if (form) {
+                form.addEventListener("submit", async function(e) {
+                e.preventDefault();
+
+                const formData = new FormData(form);
+                const response = await fetch(form.action, {
+                    method: "POST",
+                    body: formData
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    messageBox.textContent = data.message || "Pesan berhasil terkirim!";
+                    modal.classList.remove("hidden");
+                } else {
+                    messageBox.textContent = "Terjadi kesalahan. Coba lagi.";
+                    modal.classList.remove("hidden");
+                }
+                });
+            }
+
+            if (okButton) {
+                okButton.addEventListener("click", function() {
+                modal.classList.add("hidden");
+                if (form) form.reset();
+                });
+            }
+            });
+    </script>
+
+</body>

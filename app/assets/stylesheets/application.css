@@ -1,0 +1,70 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+    * {
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .gradient-bg {
+        background: linear-gradient(135deg, #1e40af 20%, #3b82f6 60%, #1e40af 100%);
+    }
+    
+    .card-hover {
+        transition: all 0.3s ease;
+    }
+    
+    .card-hover:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
+    }
+    
+    .skill-bar {
+        transition: width 2s ease-in-out;
+    }
+    
+    .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease;
+    }
+    
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .nav-link {
+        position: relative;
+        transition: color 0.3s ease;
+    }
+    
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -4px;
+        left: 0;
+        background: linear-gradient(135deg, #1e40af, #3b82f6);
+        transition: width 0.3s ease;
+    }
+    
+    .nav-link:hover::after {
+        width: 100%;
+    }
+    
+    .blue-gradient {
+        background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+    }
+
+    @keyframes fade-in {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+    }
+    .animate-fade-in {
+    animation: fade-in 0.2s ease-out;
+    }
+
+
+    select option {
+        color: #1f2937; /* ini Tailwind text-gray-800 */
+    }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heru Oktafian - Full Stack Developer & UI/UX Designer</title>
+  <link rel="icon" type="image/x-icon" href="<%= asset_path 'logo.png' %>">
+
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+
+</head>
+<body class="bg-gray-50">
+  <%= yield %>
+  <div id="notification-modal" class="fixed inset-0 bg-black/40 flex items-center justify-center hidden">
+    <div class="bg-white rounded-xl shadow-lg max-w-sm w-full p-6 text-center animate-fade-in">
+      <h3 class="text-lg font-semibold mb-2">Berhasil!</h3>
+      <p id="notification-message" class="text-gray-600 mb-4"></p>
+      <button id="notification-ok" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">
+        OK
+      </button>
+    </div>
+  </div>
+</body>
+</html>
