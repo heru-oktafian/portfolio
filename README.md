@@ -32,7 +32,7 @@ Membangun halaman web yang menjadi representasi digital dari identitas profesion
 
 ```bash
 # Clone repo
-git clone https://github.com/username/Portfolio.git
+git clone https://github.com/heru-oktafian/portfolio.git
 cd Portfolio
 
 # Install dependencies
