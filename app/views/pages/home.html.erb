@@ -484,6 +484,14 @@
     </footer>
 
     <script>
+        // Toggle mobile menu
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
         // Smooth scrolling
         function scrollToSection(sectionId) {
             document.getElementById(sectionId).scrollIntoView({
@@ -510,13 +518,6 @@
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
         };
-
-        const btn = document.getElementById('mobile-menu-btn');
-          const menu = document.getElementById('mobile-menu');
-        
-          btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-          });
 
         const observer = new IntersectionObserver(function(entries) {
             entries.forEach(entry => {
