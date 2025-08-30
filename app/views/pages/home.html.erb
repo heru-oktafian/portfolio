@@ -25,9 +25,9 @@
                 </button>
                 <!-- Menu mobile yang muncul saat tombol ditekan -->
                 <div id="mobile-menu" class="hidden absolute right-0 mt-2 flex-col space-y-2 bg-white shadow p-4 w-48">
-                    <a href="#home" class="nav-link text-gray-700 hover:text-blue-600">Beranda</a>
-                    <a href="#about" class="nav-link text-gray-700 hover:text-blue-600">Tentang</a>
-                    <a href="#skills" class="nav-link text-gray-700 hover:text-blue-600">Keahlian</a>
+                    <a href="#home" class="block text-gray-700 hover:text-blue-600">Beranda</a>
+                    <a href="#about" class="block text-gray-700 hover:text-blue-600">Tentang</a>
+                    <a href="#skills" class="block text-gray-700 hover:text-blue-600">Keahlian</a>
                     <a href="#portfolio" class="block text-gray-700 hover:text-blue-600">Portfolio</a>
                     <a href="#contact" class="block text-gray-700 hover:text-blue-600">Kontak</a>
                 </div>
@@ -494,11 +494,11 @@
 
         btn.addEventListener('click', () => {
             if (menu.classList.contains('hidden')) {
-            menu.classList.remove('hidden');
-            menu.classList.add('flex');
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
             } else {
-            menu.classList.add('hidden');
-            menu.classList.remove('flex');
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
             }
         });
 
