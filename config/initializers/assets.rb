@@ -4,7 +4,7 @@
 Rails.application.config.assets.version = "1.0"
 
 # config/initializers/assets.rb
-Rails.application.config.assets.precompile += %w( custom.css custom.js )
+Rails.application.config.assets.precompile += %w[ custom.css custom.js ]
 
 
 # Add additional assets to the asset load path.
