@@ -27,13 +27,13 @@
         </div>
     </nav>
     
-    <!-- Menu mobile yang muncul saat tombol ditekan -->
-    <div id="mobile-menu" class="hidden flex-col space-y-4 p-4 bg-white shadow md:hidden">
-      <a href="#home" class="nav-link text-gray-700 hover:text-blue-600">Beranda</a>
-      <a href="#about" class="nav-link text-gray-700 hover:text-blue-600">Tentang</a>
-      <a href="#skills" class="nav-link text-gray-700 hover:text-blue-600">Keahlian</a>
-      <a href="#portfolio" class="nav-link text-gray-700 hover:text-blue-600">Portfolio</a>
-      <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600">Kontak</a>
+    <!-- Menu Mobile (Dropdown) -->
+    <div id="mobile-menu" class="hidden absolute right-0 mt-2 flex-col space-y-2 bg-white shadow p-4 w-48">
+        <a href="#home" class="block text-gray-700 hover:text-blue-600">Beranda</a>
+        <a href="#about" class="block text-gray-700 hover:text-blue-600">Tentang</a>
+        <a href="#skills" class="block text-gray-700 hover:text-blue-600">Keahlian</a>
+        <a href="#portfolio" class="block text-gray-700 hover:text-blue-600">Portfolio</a>
+        <a href="#contact" class="block text-gray-700 hover:text-blue-600">Kontak</a>
     </div>
 
     <!-- Hero Section -->
@@ -489,7 +489,6 @@
         const menu = document.getElementById('mobile-menu');
 
         btn.addEventListener('click', () => {
-            // jika hidden -> hilangkan hidden + jadikan flex
             if (menu.classList.contains('hidden')) {
             menu.classList.remove('hidden');
             menu.classList.add('flex');
