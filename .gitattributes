@@ -5,3 +5,13 @@
 vendor/* linguist-vendored
 config/credentials/*.yml.enc diff=rails_credentials
 config/credentials.yml.enc diff=rails_credentials
+
+
+# Force GitHub Linguist to count Rails templates as Ruby
+*.erb linguist-language=Ruby
+*.html.erb linguist-language=Ruby
+
+# Exclude assets from language stats
+public/* linguist-vendored
+app/assets/* linguist-vendored
+vendor/* linguist-vendored
