@@ -32,8 +32,9 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
-Dockerfile
+# Ignore files and directories with prefix 'docker' or 'Docker'
+docker*
 Docker*
 .docker*
-docker-compose*
+.Docker*
 node_modules/*
