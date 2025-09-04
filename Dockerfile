@@ -30,7 +30,7 @@ COPY . .
 ENV RAILS_ENV=production
 ENV RACK_ENV=production
 
-ENV SECRET_KEY_BASE=14e4480bab6ef48d29d05b8d166fecc44ac51965eedc3ff00f73944512a64854324f4caf0d865fa346d0fe28154dc05e93db12889673179ce50fbbfeffe371c4
+ENV SECRET_KEY_BASE=dummy_key
 
 # Precompile assets (agar Rails siap jalan di production)
 RUN bundle exec rake assets:precompile
